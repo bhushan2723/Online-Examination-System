@@ -1,0 +1,80 @@
+/* TeacherDashboardView.css */
+.teacher-dashboard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-bottom: 15px;
+}
+
+.activity-feed {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.calendar {
+  font-size: 0.85rem;
+}
+
+.calendar th, .calendar td {
+  width: calc(100% / 7);
+}
+
+.event-item {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+}
+
+.dashboard-main-body{
+  display: flex;
+  flex-wrap:nowrap;
+  gap: 1.2rem;
+  flex-grow:1;
+}
+
+.metrics-cards{
+  display: flex;
+  gap:1.2rem;
+
+}
+
+.main-left-side{
+  display: flex;
+  flex-direction: column;
+  gap:1.2rem;
+}
+
+.main-right-side{
+  flex-grow:1;
+}
+
+.main-columns{
+  display: flex;
+  gap:1.2rem;
+  flex-grow:1
+}
+
+.main-right{
+  display: flex;
+  flex-direction: column;
+  gap:1.2rem;
+}
+.quick-action-buttons{
+  display: flex;
+  flex-wrap: nowrap;
+  gap:8px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #9ad1f5; /* your custom hover color */
+  color: #fff; /* text color on hover */
+  border-color: #9ad1f5; /* border to match */
+}
+
+.btn-outline-secondary:hover i {
+  color: #fff;
+}

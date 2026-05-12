@@ -1,0 +1,98 @@
+/* ExamForm.css */
+
+/* ---------- Global Layout ---------- */
+/* ---------- Tabs ---------- */
+.exam-form-tabs .nav-link {
+  font-weight: 500;
+  color: #555;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.exam-form-tabs .nav-link:hover {
+  color: #007bff;
+}
+
+.exam-form-tabs .nav-link.active {
+  color: #007bff;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+  background: transparent;
+}
+
+/* ---------- Cards ---------- */
+.exam-form-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.exam-form-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Form Controls ---------- */
+.exam-form-card .form-label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.exam-form-card .form-control {
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+.exam-form-card .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.15rem rgba(0,123,255,0.25);
+}
+
+/* ---------- Input Group (Exam Code) ---------- */
+.exam-code-group .form-control {
+  border-radius: 8px 0 0 8px;
+}
+
+.exam-code-group .btn {
+  border-radius: 0 8px 8px 0;
+}
+
+/* ---------- Alerts ---------- */
+.exam-form-card .alert {
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Buttons ---------- */
+.exam-form-actions button {
+  min-width: 160px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+}
+
+.exam-form-actions .btn-outline-primary {
+  border-width: 2px;
+}
+
+/* ---------- Success Alert ---------- */
+.exam-success-alert {
+  border-radius: 10px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Student Tab ---------- */
+.exam-student-tab {
+  min-height: 300px;
+  border: 1px dashed #ddd;
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #fafafa;
+}

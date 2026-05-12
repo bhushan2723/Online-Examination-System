@@ -1,0 +1,36 @@
+
+.filter-pane {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  z-index: 1060;
+  margin-top: 0.5rem;
+}
+
+.filter-pane-content {
+  padding: 1rem;
+}
+
+/* Close filter pane when clicking outside */
+.filter-pane-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  background: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .filter-pane {
+    width: 300px;
+    right: -50px;
+  }
+}

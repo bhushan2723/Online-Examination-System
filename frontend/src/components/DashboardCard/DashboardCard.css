@@ -1,0 +1,35 @@
+.card-custom {
+    width: 12rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db; 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.text-xs {
+    font-size: 0.75rem;
+}
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%; /* adjust as needed */
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%; /* start from right */
+  animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}

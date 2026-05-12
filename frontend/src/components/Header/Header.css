@@ -1,0 +1,30 @@
+ .left-section {
+    border-right: 1px solid #e5e7eb; /* light gray border */
+    flex: 0 0 200px; /* larger fixed width */
+    max-width: 200px;
+}
+.header-top-border {
+    border-top: 4px solid #00d28a;
+}
+
+/* Header border alignment */
+.header-border {
+  width: 14rem;
+  border-right: 1px solid var(#dee2e6);
+}
+
+.header-logo-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size:larger;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom:0;
+}
+
+.logo-text i {
+    font-size: 1.25rem;
+}

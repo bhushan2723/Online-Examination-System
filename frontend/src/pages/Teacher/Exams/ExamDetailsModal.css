@@ -1,0 +1,31 @@
+/* ExamDetailsModal.css */
+.modal.fade .modal-dialog {
+  transform: scale(0.7);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: scale(1);
+}
+
+.exam-details-modal .modal-content {
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.info-card {
+  background-color: #f8f9fa; /* subtle grey for read-only */
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: none; /* no hover effect */
+}
+
+.info-card span {
+  font-size: 0.95rem;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+

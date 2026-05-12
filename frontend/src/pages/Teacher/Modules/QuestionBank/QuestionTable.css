@@ -1,0 +1,73 @@
+.table-scroll-container {
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+}
+
+/* Base table styling */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Sticky header */
+.custom-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 2;
+  border-bottom: 2px solid #dee2e6;
+  border: 1px solid #dee2e6;
+  text-align: left;
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Checkbox alignment */
+.custom-table thead th input[type="checkbox"] {
+  display: block;
+  margin: auto;
+}
+
+/* Table rows */
+.custom-table tbody tr {
+  transition: background-color 0.15s ease-in-out;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.custom-table tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.075);
+}
+
+/* Table cells */
+.custom-table td {
+  padding: 0.5rem;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+}
+
+/* Expanded row styling */
+.custom-table tr.expanded-row {
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* First row top border fix */
+.custom-table tbody tr:first-child td {
+  border-top: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .table-scroll-container {
+    max-height: 400px;
+  }
+
+  .custom-table {
+    font-size: 0.85rem;
+  }
+}

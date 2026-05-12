@@ -1,0 +1,7 @@
+.scrollable-select option {
+  max-height: 200px; /* fixed height */
+}
+
+.scrollable-select {
+  overflow-y: auto;
+}

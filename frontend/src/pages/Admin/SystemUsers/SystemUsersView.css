@@ -1,0 +1,16 @@
+.table-container {
+  max-height: 600px;   /* Fixed height */
+  overflow-y: auto;    /* Scroll only table body */
+  position: relative !important;
+}
+
+.table-responsive{
+  overflow-x: unset !important;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f8f9fa; /* Match bootstrap .table-light */
+}

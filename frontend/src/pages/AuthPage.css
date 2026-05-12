@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.left-side {
+    background-color: #e4f9e9;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #111827;
+}
+
+.abc {
+    color: #6b7280;
+    font-size: small;
+}
+
+.right-side {
+    background-color: white;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 3rem;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.logo-text i {
+    font-size: 1.25rem;
+}
+
+.green-text {
+    color: #7fc27f;
+}
+
+.form-label {
+    color: #6b7280;
+}
+
+.input-focus:focus {
+    border-color: #7fc27f !important;
+    box-shadow: 0 0 0 0.2rem rgba(127, 194, 127, 0.25) !important;
+}
+
+.btn-signin {
+    background-color: #1f2937;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signin:hover {
+    background-color: #111827;
+    color: white;
+}
+
+.link-green {
+    color: #7fc27f;
+    text-decoration: none;
+}
+
+.link-green:hover {
+    text-decoration: underline;
+    color: #7fc27f;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.75rem;
+    margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.divider:not(:empty)::before {
+    margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: 0.75em;
+}
+
+.pagination-dots {
+    margin-top: 1.5rem;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 9999px;
+    background-color: #d1e7d3;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+.dot.active {
+    width: 1.5rem;
+    background-color: #7fc27f;
+}
+
+.text-secondary {
+    color: #6b7280;
+}

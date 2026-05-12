@@ -1,0 +1,32 @@
+.icon-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bg-blue {
+      background-color: #bfdbfe;
+      color: #1e40af;
+    }
+    .bg-gray {
+      background-color: #e5e7eb;
+      color: #374151;
+    }
+    .bg-yellow {
+      background-color: #fef3c7;
+      color: #b45309;
+    }
+    .bg-cyan {
+      background-color: #bae6fd;
+      color: #0369a1;
+    }
+    .bg-lime {
+      background-color: #d9f99d;
+      color: #4d7c0f;
+    }
+    .bg-red {
+      background-color: #fee2e2;
+      color: #b91c1c;
+    }
