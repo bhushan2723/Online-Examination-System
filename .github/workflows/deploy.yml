@@ -1,0 +1,65 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install backend dependencies
+      - name: Install Backend Dependencies
+        working-directory: backend
+        run: npm install
+
+      # Install frontend dependencies
+      - name: Install Frontend Dependencies
+        working-directory: frontend
+        run: npm install
+
+      # Build frontend on GitHub runner
+      - name: Build React App
+        working-directory: frontend
+        run: |
+          CI=false npm run build
+
+      # Copy complete project to EC2
+      - name: Copy Files to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.EC2_PORT }}
+          source: "."
+          target: "/home/ubuntu/Online-Examination-System"
+
+      # Deploy on EC2
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.EC2_PORT }}
+          script: |
+            cd /home/ubuntu/Online-Examination-System/backend
+
+            npm install
+
+            pm2 delete backend || true
+            pm2 start server.js --name backend
+            pm2 save
+
+            echo "Deployment completed successfully"

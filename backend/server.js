@@ -26,7 +26,10 @@ app.use(express.json());
 
 // CORS Configuration
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: [
+  'http://localhost:3000',
+  'http://13.234.48.124'
+],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'x-auth-token'],
   credentials: true
