@@ -211,7 +211,7 @@ export default function AuthPage() {
           className="mt-4 fw-semibold text-dark"
           style={{ fontSize: "1.5rem" }}
         >
-          Skillsss Check
+          Skills Check
         </h2>
         <p className="abc text-secondary small mt-2 px-3">
           Unleash Your Academic Success with Exam Mastery Hub's Exam Excellence
@@ -308,7 +308,7 @@ export default function AuthPage() {
             width="20"
             height="20"
           />
-          <span>Sign in with Google</span>
+          <span>Sign in with Googleeeeeeeeee</span>
         </button>
 
         <p className="text-center text-secondary small mb-0 d-flex align-items-center justify-content-center gap-2">
