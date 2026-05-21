@@ -20,7 +20,7 @@ export default function AuthPage() {
   const [successMessage, setSuccessMessage] = useState("");
 
   // API base URL - replace with your backend URL
- const API_URL = "http://13.234.48.124:5000/api";
+  const API_URL = "http://13.233.109.98:5000/api";
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
